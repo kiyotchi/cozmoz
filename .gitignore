@@ -1,0 +1,12 @@
+.DS_Store
+
+src/system/application/config/
+src/\.htaccess
+src/theme/
+theme/
+sql/rebuild_structure.sh
+src/files/data/
+\.settings/
+\.buildpath
+\.project
+nbproject/

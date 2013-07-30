@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+  <table name="sz_backend">
+    <column name="sz_backend_id" type="int" size="11">
+      <key />
+      <auto_increment />
+    </column>
+    <column name="backend_handle" type="varchar" size="255">
+    </column>
+    <column name="backend_name" type="varchar" size="255">
+    </column>
+    <column name="description" type="varchar" size="255">
+      <null />
+    </column>
+    <column name="last_run" type="datetime">
+      <default value="0000-00-00 00:00:00" />
+    </column>
+    <column name="result" type="text">
+      <null />
+    </column>
+    <column name="is_process" type="int" size="1">
+      <default value="0" />
+    </column>
+  </table>
+</schema>

@@ -1,0 +1,8 @@
+SeezooはGPL version 2ライセンスを採用しています。
+
+Seezooで使われているその他のライブラリにつきましては、
+それぞれのソフトウェアのライセンスに従ってください。
+
+■謝辞
+CodeIgniter がなければ、Seezoo CMSは誕生しませんでした。
+Rick Ellis と EllisLab の開発チームに感謝します。

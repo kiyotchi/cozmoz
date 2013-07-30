@@ -1,0 +1,1 @@
+<div class="<?php echo ($can_move) ? 'cmsi_arrange_block_master' : 'cmsi_block_master';?>" area_id="<?php echo $aid;?>" data-reverse="<?php echo ( $reverse ) ? 1 : 0;?>">

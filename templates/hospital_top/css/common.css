@@ -1,0 +1,598 @@
+/* CSS Document */
+
+/*繝ｪ繧ｻ繝�ヨcss
+============================================*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td{
+	padding:0;
+	margin:0;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing:0;
+}
+
+fieldset,img{
+	border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-weight:normal;
+	font-style:normal;
+}
+
+ol,ul{
+	list-style:none;
+}
+
+caption,th{
+	text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	font-size:100%;
+}
+
+q:before,q:after{
+	content:'';
+}
+
+abbr,acronym{
+	border:0;
+}
+
+a{
+	outline:none;
+}
+
+/*繝ｪ繝ｳ繧ｯ繧ｫ繝ｩ繝ｼ
+=======================================*/
+		
+a:link {
+	color:#37943a;
+	
+}
+a:visited {
+		color:#37943a;
+		text-decoration:underline;
+
+}
+a:hover {
+	text-decoration:none;
+	color: #37943a;
+}
+a:active {
+		color:#37943a;
+}
+
+/*繝ｪ繝ｳ繧ｯ繧ｫ繝ｩ繝ｼ
+=======================================*/
+
+
+/*繝ｪ繧ｻ繝�ヨcss縺薙％縺ｾ縺ｧ
+============================================*/
+
+
+/* 譁�ｭ励し繧､繧ｺ
+----------------------------------*/
+body{
+   font:14px/1.231 arial,helvetica,clean,sans-serif;
+   *font-size:small;*font:x-small;
+	 	line-height:160%;
+			color:#131313;
+}
+
+select,
+input,
+button,
+textarea,
+button {
+   font:99% arial,helvetica,clean,sans-serif;
+}
+
+table{
+   font-size:inherit;
+   font:100%;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+   font-family:monospace;
+   *font-size:108%;
+   line-height:100%;
+}
+
+/* 譁�ｭ励し繧､繧ｺ end
+----------------------------------*/
+
+
+
+
+/*蜈ｨ菴薙↓菴ｿ縺�ss
+============================================*/
+h3{
+	margin:0 auto;
+	height:30px;
+	line-height:30px;
+	border-top:solid 1px #999;
+	border-bottom:solid 2px #37943a;
+	padding:0 0 0 10px;
+	font-weight:bold;
+	
+}
+
+h4{
+	font-weight:bold;
+	height:15px;
+	line-height:15px;
+	padding:0 0 0 5px;
+	border-left:solid 8px #37943a;
+}
+
+h5{
+	font-weight:bold;
+	color:#37943a;
+	
+}
+
+h6{
+		color:#37943a;
+}
+
+
+.il_contents ul{
+}
+
+
+.il_contents li{
+	list-style:inside disc;
+}
+
+
+body{
+	background-color:#fbfbf3;
+	border-top:solid 2px #37943a;
+}
+
+
+#wrap{
+	width:970px; 
+	margin:0 auto;
+}
+
+
+#header{
+	padding:15px 0 0 0;
+	width:960px;
+	height:55px;	
+}
+
+
+#header h1{
+	float:left;
+}
+
+#header .tel{
+	float:right;
+}
+
+#navi{
+	width:960px;
+	height:35px;
+		background:url(../images/kugiri.png) no-repeat center left;
+	margin:0 auto 15px;
+}
+
+#navi ul{
+}
+
+#navi ul li{
+	float:left;
+	background:url(../images/kugiri.png) no-repeat center right;
+}
+
+#navi ul li a{
+	display:block;
+	height:35px;
+	line-height:35px;
+	width:160px;
+	text-align:center;
+	color:#333;
+	text-decoration:none;
+	font-size:1.1em;
+}
+
+#navi ul li a:hover{
+	width:140px;
+	margin:0 10px;
+	color:#FFF;
+	background:#37943a;
+	-webkit-border-top-left-radius: 5px;  
+  -webkit-border-top-right-radius: 5px;  
+  -webkit-border-bottom-right-radius: 5px;  
+  -webkit-border-bottom-left-radius: 5px;  
+  -moz-border-radius-topleft: 5px;  
+  -moz-border-radius-topright: 5px;  
+  -moz-border-radius-bottomright: 5px;  
+  -moz-border-radius-bottomleft: 5px; 
+}
+
+
+#main_img{
+	width:966px;
+	margin:0 auto 15px;
+}
+
+#wrap .tl_contents{
+	width:240px;
+	float:left;
+	overflow:hidden;
+	margin:0 20px 0 5px;
+}
+
+#wrap .item2{
+	font-size:1.1em;
+	height:35px;
+	line-height:35px;
+	border-bottom:solid 3px #b4d671;
+}
+
+
+#wrap .tl_contents ul{
+	margin:0 0 -1px 0;
+}
+
+
+#wrap .tl_contents ul li{
+	width:240px;
+	background:url(../images/li_icon.gif) no-repeat left center;
+	padding:0 0 0 10px;
+	border-bottom:dotted 1px #232323;
+}
+
+
+#wrap .tl_contents ul li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+}
+
+
+#wrap .tc_contents{
+	width:485px;
+	float:left;
+	margin:0 20px 0 0;
+}
+
+#wrap .item1{
+	font-size:1.1em;
+	height:35px;
+	line-height:35px;
+	border-bottom:solid 3px #dc7474;
+}
+
+#wrap .item3{
+	font-size:1.1em;
+	height:35px;
+	line-height:35px;
+	border-bottom:solid 3px #37943a;
+}
+
+#wrap .tc_contents table{
+	border:solid 1px #afafaf;
+	width:475px;
+	margin:10px 5px;
+}
+
+#wrap .tc_contents table tr th{
+	background:#f2f2f2;
+	border:solid 1px #afafaf;
+	padding:5px;
+}
+
+
+#wrap .tc_contents table tr td{
+	border:solid 1px #afafaf;
+	background:#FFF;
+	text-align:center;
+	width:45px;
+}
+
+.caution{
+	margin:0 5px;
+	color:#F00;
+}
+
+
+.sunday{
+	color:#C00;
+}
+
+.saturday{
+	color:#039;
+}
+
+
+#wrap .tc_contents dl{
+	line-height:200%;
+	margin:10px 5px;
+}
+
+#wrap .tc_contents dl dt{
+	float:left;
+	margin:0 10px 0 0;
+}
+
+
+#wrap .tc_contents dl dt dd{
+}
+
+
+
+
+#wrap .tr_contents{
+	width:195px;
+	float:left;
+}
+
+
+#wrap .tr_contents img{
+	display:block;
+	margin:10px auto;
+}
+
+#wrap .tr_contents ul{
+	margin:5px;
+}
+
+
+#wrap .tr_contents ul li{
+	list-style : none outside;
+}
+
+
+
+#wrap .item4{
+	font-size:1.1em;
+	height:35px;
+	line-height:35px;
+	border-bottom:solid 3px #61b7b7;
+}
+
+
+
+
+#wrap .pagetop{
+	font-size:0.9em;
+	width:960px;
+	margin:100px 0 0 0;
+	background:url(../images/pagetop_18.gif) no-repeat 852px center;
+	color:#000;
+	text-align:right;
+	float:left
+}
+
+
+
+
+#wrap .pagetop a{ 
+	color:#000;
+	text-decoration:none;
+}
+
+
+#wrap .pagetop a:hover{
+	color:#000;
+}
+
+
+#footer{
+	clear:both;
+	overflow:hidden;
+	width:960px;
+	padding:15px 0;
+	margin:0 0 15px 0;
+	border-top:solid 1px #b8b8b8;
+	border-bottom:solid 1px #b8b8b8;
+}
+
+
+#footer ul{
+	overflow:hidden;
+	margin:0;
+	width:960px;
+	clear:both;
+}
+
+
+#footer ul li{
+	margin:0 0 0 -1px;
+	float:left;
+}
+
+
+#footer ul li a{
+	font-size:0.9em;
+	color:#333;
+	text-decoration:none;
+	padding:0 15px;
+	border-left:solid 1px #666;
+}
+
+
+#footer ul li a:hover{
+	color:#666;
+}
+
+
+
+address{
+	color:#333;
+	text-align:center;
+	font-size:0.9em;
+}
+
+
+address img{
+	vertical-align:top;
+}
+
+#copyright{
+	color:#333;
+	margin:5px 0 15px;
+	text-align:center;
+	font-size:0.9em;
+}
+
+
+
+
+/*荳ｭ繝壹�繧ｸ
+============================================*/
+
+#ic_wrap{
+	width:960px;
+	margin:30px auto 0;
+	overflow:hidden;
+}
+
+
+#ic_wrap .il_contents{
+	width:745px;
+	float:left;
+	margin:0 20px 0 0;
+}
+
+
+#ic_wrap .inner_heading{
+	font-size:1.2em;
+	font-weight:bold;
+	color:#333;
+	width:715px;
+	height:72px;
+	line-height:72px;
+	padding:0 0 0 30px;
+	background:url(../images/heading.png) no-repeat;
+}
+
+/*========================
+IE6蜊企�蛹�==========================*/
+* html .inner_heading{
+behavior: expression(
+this.style.behavior || (
+this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='"+this.currentStyle.getAttribute("backgroundImage").slice(5,-2)+"')",
+this.style.backgroundImage = "none",
+this.style.behavior = "none"
+)
+);
+}
+
+
+
+#ic_wrap table{
+	border:solid 1px #afafaf;
+	width:735px;
+	margin:10px 5px;
+}
+
+#ic_wrap table tr th{
+	background:#f2f2f2;
+	width:250px;
+	border:solid 1px #afafaf;
+	padding:5px;
+	vertical-align:top;
+}
+
+
+#ic_wrap table tr td{
+	border:solid 1px #afafaf;
+	background:#FFF;
+	text-align:left;
+	padding:5px;
+}
+
+
+
+#ic_wrap .ir_contents{
+	width:195px;
+	float:right;
+	overflow:hidden;
+}
+
+
+.ir_contents ul{
+	margin:0 0 -1px 0;
+	border-bottom:none;
+}
+
+
+.ir_contents ul li{
+	width:195px;
+	background:url(../images/li_icon.gif) no-repeat left center;
+	padding:0 0 0 10px;
+	border-bottom:dotted 1px #232323;
+}
+
+
+.ir_contents ul li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+}
+
+/*==========================
+騾∽ｿ｡繝懊ち繝ｳ縲√Μ繧ｻ繝�ヨ繝懊ち繝ｳ
+============================*/
+
+.sr_box{
+	text-align:center;
+}
+
+.sr_box .submit{
+	color:#FFF;
+	background:#37943a;
+	width:120px;
+	height:30px;
+	margin:0 10px;
+	-webkit-border-top-left-radius: 5px;  
+  -webkit-border-top-right-radius: 5px;  
+  -webkit-border-bottom-right-radius: 5px;  
+  -webkit-border-bottom-left-radius: 5px;  
+  -moz-border-radius-topleft: 5px;  
+  -moz-border-radius-topright: 5px;  
+  -moz-border-radius-bottomright: 5px;  
+  -moz-border-radius-bottomleft: 5px; 
+}
+
+.sr_box .reset{
+background:#CCC;
+	width:120px;
+	height:30px;
+		margin:0 10px;
+	-webkit-border-top-left-radius: 5px;  
+  -webkit-border-top-right-radius: 5px;  
+  -webkit-border-bottom-right-radius: 5px;  
+  -webkit-border-bottom-left-radius: 5px;  
+  -moz-border-radius-topleft: 5px;  
+  -moz-border-radius-topright: 5px;  
+  -moz-border-radius-bottomright: 5px;  
+  -moz-border-radius-bottomleft: 5px; 
+	}
+	
+	/*==========================
+IE6蜊企�蛹也判蜒丞ｯｾ遲膨ss
+============================*/
+	
+	* html #wrap img{ /* IE-expression (fix png alpha) */
+behavior: expression(
+this.style.filter = this.src.match(/\.png$/) ? "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "')" : this.style.filter,
+this.src = this.src.match(/\.png$/) ? this.src.slice(0, this.src.lastIndexOf("/")+1) + "ie6png.gif" : this.src,
+this.style.behavior = "none"
+);
+}

@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond $1 !^(index\.php|ga\.php|sitemap.xml|sitemap_ssl.xml|css|js|captcha|uploads|templates|blocks|phpMyAdmin|.+\.gif$|.+\.jpe?g$|.+\.png$|.+\.js$|.+\.css$|.+\.json$|.+\.ico$|.+\.swf$|.+\.flv$|.+\.pdf$|.+\.mp4$)
+RewriteRule ^(.*)$ index.php?__SZREQ__=/$1 [L]

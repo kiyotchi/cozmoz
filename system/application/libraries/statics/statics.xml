@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+	<variable>
+		<name>base_path</name>
+		<description>ドキュメントルートまでの絶対パスを出力します。</description>
+		<method>base_path</method>
+	</variable>
+	<variable>
+		<name>site_path</name>
+		<description>サイトまでの絶対パスを出力します。</description>
+		<method>site_path</method>
+	</variable>
+	<variable>
+		<name>top_path</name>
+		<description>ホームページまでの絶対パスを出力します。</description>
+		<method>top_path</method>
+	</variable>
+	<variable>
+		<name>static_path</name>
+		<description>静的ページまでのパスを出力します。</description>
+		<method>static_path</method>
+	</variable>
+	<variable>
+		<name>jQuery</name>
+		<description>jQueryをロードします。</description>
+		<method>jQuery</method>
+	</variable>
+	<variable>
+		<name>site_title</name>
+		<description>サイトタイトルを表示します。</description>
+		<method>site_title</method>
+	</variable>
+</schema>
+

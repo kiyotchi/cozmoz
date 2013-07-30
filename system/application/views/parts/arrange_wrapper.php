@@ -1,0 +1,1 @@
+<div id="arrange_block-<?php echo $value['block_id'];?>" class="cmsi_arrange_block" block_id="<?php echo $value['block_id'];?>" block_type="<?php echo $value['collection_name'];?>">
