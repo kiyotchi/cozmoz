@@ -28,8 +28,6 @@ class im_require extends Controller
 		require APPPATH . 'config/database.php';
 		$dsn = $db[$active_group];
 		
-		
-		
 		//第三引数
 		$three = array();
 		$three['db-class'] = 'PDO';
@@ -39,7 +37,6 @@ class im_require extends Controller
 		$three['option'] = array(
 			PDO::MYSQL_ATTR_INIT_COMMAND => "SET CHARACTER SET `utf8`"
 		);
-		//var_dump($this->im_require_lib->get_def( $this->input->get('hash') ));
 		
 		
 		IM_Entry(

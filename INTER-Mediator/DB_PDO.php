@@ -234,7 +234,10 @@ class DB_PDO extends DB_AuthCommon implements DB_Access_Interface
             $this->errorMessageStore('Select:' . $sql);
             return array();
         }
+		
+		//$row = $result->fetchAll(PDO::FETCH_ROW);
         $this->mainTableCount = $result->fetchColumn(0);
+		//$this->mainTableCount = $row[0];
 
         // Create SQL
         $limitParam = 100000000;

@@ -1229,7 +1229,7 @@ INTERMediatorOnPage = {
 				INTERMediatorOnPage.authHashedPassword = w
 			} else {
 				INTERMediatorOnPage.authHashedPassword = SHA1(w + INTERMediatorOnPage.authUserSalt) + INTERMediatorOnPage.authUserHexSalt
-			} if (INTERMediatorOnPage.authUser.length > 0) {
+			}if (INTERMediatorOnPage.authUser.length > 0) {
 				INTERMediatorOnPage.storeCredencialsToCookie()
 			}
 			f();
@@ -1336,7 +1336,7 @@ INTERMediatorOnPage = {
 			} else {
 				h = navigator.appVersion.indexOf(".");
 				e = parseInt(navigator.appVersion.substring(0, h))
-			} if (l.indexOf("-") > -1) {
+			}if (l.indexOf("-") > -1) {
 				m = (n >= e)
 			} else {
 				if (l.indexOf("+") > -1) {
@@ -1428,7 +1428,7 @@ INTERMediatorOnPage = {
 			b = f
 		} else {
 			b = INTERMediatorLib.getParentEnclosure(f)
-		} if (b != null) {
+		}if (b != null) {
 			d = [];
 			e(b, c)
 		}
@@ -1610,7 +1610,7 @@ var IMParts_im_fileupload = {
 			} catch (e) {
 				IMParts_im_fileupload.html5DDSuported = false
 			}
-		} if (IMParts_im_fileupload.html5DDSuported) {
+		}if (IMParts_im_fileupload.html5DDSuported) {
 			k.dropzone = "copy";
 			k.style.width = "200px";
 			k.style.height = "100px";
@@ -2711,7 +2711,7 @@ var INTERMediator = {
 						enclosure = INTERMediatorLib.getParentRepeater(currentNode.node)
 					} else {
 						enclosure = INTERMediatorLib.getParentRepeater(INTERMediatorLib.getParentEnclosure(currentNode.node))
-					} if (enclosure != null) {
+					}if (enclosure != null) {
 						for (field in currentNode["foreign-value"]) {
 							targetNode = getEnclosedNode(enclosure, currentNode.name, field);
 							if (targetNode) {
@@ -2774,7 +2774,7 @@ var INTERMediator = {
 						enclosure = INTERMediatorLib.getParentRepeater(currentNode.node)
 					} else {
 						enclosure = INTERMediatorLib.getParentRepeater(INTERMediatorLib.getParentEnclosure(currentNode.node))
-					} if (enclosure != null) {
+					}if (enclosure != null) {
 						targetNode = getEnclosedNode(enclosure, currentNode.name, currentNode.field);
 						if (targetNode) {
 							currentNode.target = targetNode.getAttribute("id")
@@ -2983,7 +2983,7 @@ var INTERMediator = {
 							INTERMediator.setErrorMessage("EXCEPTION-12" + ex.message)
 						}
 					}
-				} if (targetRecords.count == 0) {
+				}if (targetRecords.count == 0) {
 					for (i = 0; i < repeaters.length; i++) {
 						newNode = repeaters[i].cloneNode(true);
 						nodeClass = INTERMediatorLib.getClassAttributeFromNode(newNode);
@@ -3652,7 +3652,36 @@ var INTERMediator = {
 					INTERMediatorLib.addEvent(node, "click", function () {
 						INTERMediator.startFrom = (endPageCount > 0) ? endPageCount : 0;
 						INTERMediator.constructMain(true)
-					})
+					});
+					
+					
+					//ページ番号ジャンプ機能を追加
+					node = document.createElement("SPAN");
+					navigation.appendChild(node);
+					var c_node = document.createElement("INPUT");
+					c_node.setAttribute("class", 'IM_PAGE_JUMP');
+					c_node.setAttribute("type", 'text');
+					c_node.setAttribute("width", 20);
+					c_node.setAttribute("style", 'width:20px;');
+					c_node.setAttribute("value", ( INTERMediator.startFrom / pageSize ) + 1 );
+					
+					node.appendChild(c_node);
+					node.appendChild( document.createTextNode('ページ目へ') );
+					INTERMediatorLib.addEvent(
+						c_node,
+						"change",
+						function(){
+							if( this.value < 1){this.value = 1;}
+							var max_page = Math.ceil( allCount / pageSize );
+							if( max_page < this.value ){
+								this.value = max_page;
+							}
+							INTERMediator.startFrom = ( ~~this.value - 1 ) * pageSize;
+							INTERMediator.constructMain(true);
+						}
+					);
+					
+					
 				}
 				for (i = 0; i < deleteInsertOnNavi.length; i++) {
 					switch (deleteInsertOnNavi[i]["kind"]) {
@@ -4137,7 +4166,7 @@ function SHA1(e) {
 				} else {
 					return "UNKNOWN KEY INPUT TYPE"
 				}
-			} if (64 < (C / 8)) {
+			}if (64 < (C / 8)) {
 				z = f(z, C, D);
 				z[15] &= 4294967040
 			} else {
@@ -4794,7 +4823,7 @@ function biDivideModulo(c, g) {
 			e.isNeg = d;
 			e = biAdd(e, g)
 		}
-	} if (e.digits[0] == 0 && biHighIndex(e) == 0) {
+	}if (e.digits[0] == 0 && biHighIndex(e) == 0) {
 		e.isNeg = false
 	}
 	return [f, e]

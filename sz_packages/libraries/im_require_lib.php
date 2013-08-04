@@ -16,7 +16,6 @@ class im_require_lib
 	{
 		$this->ci = get_instance();
 		$this->ci->load->library( 'session' );
-		
 	}
 	
 	// ----------------------------------------------------
