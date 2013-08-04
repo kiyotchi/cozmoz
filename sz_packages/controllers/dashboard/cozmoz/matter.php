@@ -32,7 +32,8 @@ class Matter extends SZ_Controller
 		//取得データの定義を作成
 		$def = array(
 			array(
-				'records' => 40,
+				//'records' => 40,
+				'records' => 1,
 				'paging' => TRUE,
 				'name' => $this->customer_model->matter_table_name,
 				'key' => 'id',

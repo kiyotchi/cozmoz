@@ -99,10 +99,9 @@ class Customer extends SZ_Controller
 			);
 		}
 		
-		
 		$def = array(
 			array(
-				'records' => 20,
+				'records' => 2,
 				'paging' => true,
 				'name' => $this->customer_model->customer_table_name,
 				'key' => 'id',
@@ -117,10 +116,14 @@ class Customer extends SZ_Controller
 				$this->pref
 			);
 		
+		
+		
 		$data['hash'] = $this->im_require_lib->save_def( $def );
 		$data['cutomer_table'] = $this->customer_model->customer_table_name;
 		$data['im_url'] = site_url( 'dashboard/im_require' ) . '?hash='.$data['hash'] ;
 		$this->add_header_item( build_javascript( $data['im_url'] ) );
+		
+		
 		
 		$this->load->view('dashboard/cozmoz/customer_view',$data);
 	}

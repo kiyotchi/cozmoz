@@ -5,6 +5,8 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		
+		//INTERMediator.startFrom = 1;
+		
 		INTERMediator.construct(true);
 		
 		
